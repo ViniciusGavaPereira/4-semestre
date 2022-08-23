@@ -1,0 +1,132 @@
+:root{
+    --laranjaClaro: #F3751E;
+    --azul: #034790;    
+}
+
+body{
+    font-size: 20px;
+    background: linear-gradient(90deg, #D35A25, var(--laranjaClaro) 5% 100%);
+    font-family: arial, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+strong{
+    color: #FCFCFC;
+}
+
+img{
+    box-shadow: 1px 1px  15px rgba(1, 1, 1, .5);
+}
+
+ul{
+    list-style-type: none;
+
+}
+
+article{
+    border-top: solid #034790 ;
+    border-bottom:solid #034790;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+
+article p{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.user-info{
+    background: linear-gradient(90deg, #D35A25, var(--laranjaClaro) 5% 100%);
+    margin-bottom: 15px;
+    border-bottom: solid  var(--azul);
+    
+}
+
+.container{
+    height: 1280px;
+    margin: auto ;
+    width: 800px;
+    position: relative;
+    background: #FCFCFC; 
+    
+    box-shadow: 1px 1px  35px white;
+}
+
+.section-1{
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    height: 200px;
+}
+
+.aside-card{
+    width: 60%;
+    background-color: var(--laranjaClaro);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 10px rgba(1, 1, 1, .5);
+}
+
+
+.Card table{
+
+
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 12px;
+
+}
+.user-info{
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+}
+
+.section-2{
+    height: 200px;
+}
+
+.Card{
+    padding-left: 15px;
+    width: 100%;
+    height: 100%;
+    background: var(--azul);
+    margin: 40px;
+    margin-top: 0px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px rgba(1, 1, 1, .5);
+    
+}
+
+.img{
+    height: 150px;
+    width: 150px;
+    border-radius: 80px;
+    margin-left: 110px;
+    margin-bottom: 20px;
+}
+
+.section-3{
+    height: 200px;
+    width: 90%;
+    padding-top: 50px;
+    
+}
+
+.orange{
+
+    background:#F3751E
+}
+
+.section-4{
+    height: 200px;
+    width: 90%;
+    padding-top: 50px;
+    background: green;
+    
+}
