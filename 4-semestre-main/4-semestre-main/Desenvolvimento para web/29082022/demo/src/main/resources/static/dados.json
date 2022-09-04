@@ -1,0 +1,24 @@
+{
+    "nome": "Vinicius Gava Pereira",
+
+    "dataNascimento": "18-01-2000",
+
+    "conhecimentos": [
+        "Java",
+        "Spring Boot",
+        "MySQL",
+        "HTML",
+        "CSS"
+
+    ],
+
+    "contatos" : [
+        "11960245810",
+        "vini-gava@outlook.com.br",
+        "https://www.linkedin.com/in/vinicius-gava-pereira",
+        "https://github.com/ViniciusGavaPereira"
+
+    ]
+
+
+}

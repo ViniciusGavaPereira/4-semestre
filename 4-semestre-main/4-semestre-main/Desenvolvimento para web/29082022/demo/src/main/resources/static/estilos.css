@@ -1,0 +1,86 @@
+body{
+    font-size: 20px;
+}
+
+.container{
+    height: 100vh;
+    margin: auto ;
+    width: 800px;
+    position: relative;
+    background: #b48383;
+}
+
+.section-1{
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    height: 200px;
+
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+.section-1 strong{
+    font-size: 18px;
+    margin-left: 15px;
+
+}
+
+.section-1 h2{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+
+
+}
+
+.section-1 span{
+    font-size: 13px;
+}
+
+
+.aside-card{
+    width: 50%;
+    background-color: red;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.user-info{
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+}
+
+.section-2{
+    height: 200px;
+}
+
+.Card{
+    width: 100%;
+    height: 100%;
+    background: blue;
+    margin: 40px;
+}
+
+.img{
+    height: 150px;
+    width: 150px;
+    border-radius: 80px;
+    margin-left: 110px;
+    margin-bottom: 20px;
+}
+
+.section-3{
+    height: 200px;
+    width: 90%;
+    padding-top: 50px;
+}

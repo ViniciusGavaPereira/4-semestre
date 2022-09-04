@@ -9,31 +9,85 @@
 </head>
 
 <body>
-    <article>
-        <h1>Exemplo Javascript</h1>
-        <p>Nome <span id="nome"> Fulano da Silva</span></p>
-        <p>Data de nascimento <span id="dtNascimento"> 18/01/2000</span></p>
-        <ul id="conhecimentos">
-            <li>Javascript</li>
-            <li>Sql</li>
-            <li>Spring</li>
-        </ul>
-    </article>
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="user-info">
+                <span id="nome">VINICIUS GAVA</span>
+            </div>
+            <div class="section-1">
+                <img src="./img/Foto Vinicius Gava Pereira.jpg" alt="img" class="img">
+                <div class="aside-card">
+                    <strong>Informações de contato</strong>
+                    <ul id="contatos">
+                        <li>Telefone:<span id="idTelefone">TelefoneSumir</span></li>
+                        <li>E-mail:<span id="idEmail">EmailSumir</span></li>
+                        <li>Linkedin:<span id="idLinkedin">LinkedinSumir</span></li>
+                        <li>Github:<span id="idGithub">GIthubSumir</span></li>
+                    </ul>
+                   
+                </div>
+            </div>
+            <section class="section-2 flex">
+                <div class="Card">
+                        <strong>Experiência profissional</strong>
+                        <h1>Teste</h1>
+                        <h4>teste testes teste</h4>
+                </div>
+                <div class="Card">
+                        <strong>Formação</strong>
+                        <h1>Teste</h1>
+                        <h4>teste testes teste</h4>
+                </div>
+            </section>
+    
+            <section class="section-3">
+                <div class="Card">
+                        <strong>Cursos e especialização</strong>
+                        <h1>Teste</h1>
+                        <h4>teste testes teste</h4>
+                </div>
+            </section>
+        </div>
 
+    
+    </body>
+    
+    </html>
     <script>
+        const xhr = new XMLHttpRequest();
 
-        var variavelVar = 10;
-        let variavelLet = 10;
+        xhr.open('GET', 'dados.json');
 
-        for(let i = 0; i < 5; i++){
-            var variavelVar = i;
-            let variavelLet = i;
- 
-            alert('Alert 1. ' + i + ' : \nvariavelVar: ' + variavelVar + '\n' + 'variavelLet: ' + variavelLet)
-        }
+        xhr.onload = function(){
+        
+            if(xhr.status >= 200 && xhr.status < 400){
+                let dados = JSON.parse(xhr.responseText);
+                console.log(dados.contatos);
+                document.getElementById('idTelefone').innerHTML =  dados.contatos[0];
+                document.getElementById('idEmail').innerHTML =  dados.contatos[1];
+                document.getElementById('idLinkedin').innerHTML =  dados.contatos[2];
+                document.getElementById('idGithub').innerHTML =  dados.contatos[3];
+                
 
-        alert('Alert 2: \nvariavelVar: ' + variavelVar + '\n' + 'variavelLet: ' + variavelLet)
+            
+            }else{
+                console.log(xhr.satus);
 
+            }
+        };
+
+        xhr.send();
     </script>
 </body>
 
